@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Your Order - D&A Creations</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("ngktM0gdPFssN1N_r"); // Aapki Public Key
+   })();
+</script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: hsl(326, 100%, 97%); font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px;">
+
+    <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 100%; max-width: 550px;">
+        <h2 style="text-align: center; color: #333; margin-bottom: 5px;">Complete Your Order</h2>
+        <p id="selectedServiceText" style="text-align: center; color: #5c4033; font-weight: bold; margin-bottom: 20px; font-size: 15px;"></p>
+        
+        <form action="https://formspree.io/f/xnpqbrwz" method="POST">
+            
+            <!-- Hidden input to send service name in email -->
+            <input type="hidden" id="serviceInput" name="Selected_Service" value="General Order">
+
+            <!-- Contact Section -->
+            <h3 style="font-size: 16px; color: #444; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-bottom: 15px;">Contact Information</h3>
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px; color: #555; font-size: 14px;">Email Address</label>
+                <input type="email" name="email" placeholder="Enter your email" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
+            </div>
+
+               <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px; color: #555; font-size: 14px;">Phone Number / WhatsApp</label>
+                <input type="text" name="phone" placeholder="03XXXXXXXXX" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
+            </div>
+
+
+            <!-- Delivery Section -->
+            <h3 style="font-size: 16px; color: #444; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-bottom: 15px; margin-top: 20px;">Shipping / Delivery Address</h3>
+            
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px; color: #555; font-size: 14px;">Country / Region</label>
+                <select name="country" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; background: white;">
+                    <option value="Pakistan" selected>Pakistan</option>
+                </select>
+            </div>
+
+            <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                <div style="flex: 1;">
+                    <label style="display: block; margin-bottom: 5px; color: #555; font-size: 14px;">First Name</label>
+                    <input type="text" name="first_name" placeholder="First name" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
+                </div>
+                <div style="flex: 1;">
+                    <label style="display: block; margin-bottom: 5px; color: #555; font-size: 14px;">Last Name</label>
+                    <input type="text" name="last_name" placeholder="Last name" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
+                </div>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px; color: #555; font-size: 14px;">Street Address</label>
+                <input type="text" name="address" placeholder="House no, street, area" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
+            </div>
+
+            <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                <div style="flex: 1;">
+                    <label style="display: block; margin-bottom: 5px; color: #555; font-size: 14px;">City</label>
+                    <input type="text" name="city" placeholder="City name" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
+                </div>
+                <div style="flex: 1;">
+                    <label style="display: block; margin-bottom: 5px; color: #555; font-size: 14px;">Postal Code (Optional)</label>
+                    <input type="text" name="postal_code" placeholder="Postal code" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
+                </div>
+            </div>
+
+         
+            <!-- Payment Method -->
+            <div style="margin-bottom: 15px; background: #f9f9f9; padding: 12px; border-radius: 6px; border: 1px solid #ddd;">
+                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; color: #333; font-weight: bold;">
+                    <input type="radio" name="payment_method" value="Cash on Delivery" checked style="accent-color: #5c4033;">
+                    Cash on Delivery (COD) - Pay when you receive
+                </label>
+            </div>
+
+            <!-- Customization Notes -->
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px; color: #555; font-size: 14px;">Order Details / Customization Notes</label>
+                <textarea name="order_details" rows="3" placeholder="Mention design details, colors, or specific reference..." required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" style="width: 100%; padding: 12px; background-color: #5c4033; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; font-weight: bold;">Place Order</button>
+        </form>
+
+        <div style="text-align: center; margin-top: 15px;">
+            <a href="index.html" style="color: #5c4033; text-decoration: none; font-size: 14px;">Back to Home</a>
+        </div>
+    </div>
+
+    <!-- JavaScript to catch service name from URL -->
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const service = urlParams.get('service');
+        
+        if (service) {
+            // Format name (replace hyphens with spaces)
+            const formattedService = service.replace(/-/g, ' ');
+            document.getElementById('selectedServiceText').innerText = 'Selected Service: ' + formattedService;
+            document.getElementById('serviceInput').value = formattedService;
+        } else {
+            document.getElementById('selectedServiceText').innerText = 'Selected Service: Custom Order';
+        }
+    </script>
+
+</body>
+</html>

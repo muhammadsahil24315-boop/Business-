@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&A Creations - Creative World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">D&A Creations</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav> 
+
+    <div class="header" id="home">
+        <img src="bow.png" alt="Maroon Bow" class="header-bow-img">
+        <div class="header-left-text">
+            Created with passion, made with love <span class="header-heart">&#9829;</span>
+        </div>
+
+        <div class="header-logo-container">
+            <h1 class="logo-main">D&A</h1>
+            <h2 class="logo-sub">CREATIONS</h2>
+            <span class="header-heart">&#9829;</span>
+        </div>
+
+        <div class="header-right-text">
+            Art & Craft Handmade with Elegance <span class="header-heart">&#9829;</span>
+        </div>
+        <img src="bow.png" alt="Maroon Bow" class="header-bow-img">
+    </div>
+
+    <div class="welcome-section">
+        <h1 class="welcome-title">
+            <span class="welcome-star">&#10024;</span>
+            Welcome to our
+            <span style="color: #B47C63;">CREATIVE WORLD</span>
+            <span class="welcome-star">&#10024;</span>
+        </h1>
+        <p class="welcome-subtext" style="font-size: 18px; color: #555; font-style: italic; margin-top: 10px; font-family: 'Times New Roman', serif;">
+            Where You Find Your Fvrts Things !
+        </p>
+    </div>
+
+    <!-- Services Section (Pink Box with Left & Right Flowers inside it) -->
+    <div class="services-section">
+        <!-- Left Flower -->
+        <div class="section-flower left-flower">
+            
+        </div>
+
+        <!-- 4 Columns Grid Wrapper -->
+        <div class="services-grid-wrapper">
+            <div class="service-item">
+                <p class="service-title">Customized<br>Nikah Dupattas</p>
+            </div>
+
+            <div class="service-item">
+                <p class="service-title">Calligraphy<br>Art</p>
+            </div>
+
+            <div class="service-item">
+                <p class="service-title">Sketches &amp;<br>Portraits</p>
+            </div>
+
+            <div class="service-item">
+                <p class="service-title">Nikkah<br>Essentials</p>
+            </div>
+
+            <div class="service-item">
+                <p class="service-title">Handicrafts</p>
+            </div>
+
+            <div class="service-item">
+                <p class="service-title">Customized<br>Gifts</p>
+            </div>
+            
+            <div class="service-item">
+                <p class="service-title">Scrapbooks &amp;<br>Customized Cards</p>
+            </div>
+
+            <div class="service-item">
+                <p class="service-title">And Much More!</p>
+            </div>
+        </div>
+
+        <!-- Right Flower (Ab yeh pink box ke andar bilkul sahi position hoga) -->
+        <div class="section-flower right-flower">
+            
+        </div>
+    </div>
+ 
+<!-- About Section -->
+<section id="about" class="about-container">
+    
+    <!-- Heading aur Subtitle ko flex box se bilkul bahir rkh diya taake ye poore section ke center mein aayein -->
+    <div style="text-align: center; width: 100%;">
+        <h2 class="about-heading">About D&A Creations</h2>
+        <p class="about-subtitle">Where passion meets craftsmanship</p>
+    </div>
+
+    <div class="about-flex-wrapper">
+        
+        <!-- Left Side: Text Content -->
+        <div class="about-content">
+            <p class="about-text">
+                Welcome to <strong>D&A Creations</strong>—your ultimate destination for handcrafted elegance and personalized artistry. 
+                We believe that every special moment, celebration, and bond deserves something truly unique. That is why we pour 
+                love, care, and attention to detail into every single piece we create.
+            </p>
+
+            <p class="about-text">
+                From custom-embroidered Nikah dupattas and timeless Arabic calligraphy to heartfelt sketches, hand-drawn portraits, 
+                unique handicrafts, and customized memory scrapbooks, everything we make is designed to celebrate your most precious 
+                memories. Thank you for supporting our small business and letting us be a part of your beautiful stories!
+            </p>
+        </div>
+
+        <!-- Right Side: Flower Image -->
+        <div class="about-image-container">
+            <img src="bg.png" alt="Decorative Flower" class="about-flower-img">
+        </div>
+
+    </div>
+</section>
+
+    <section id="services" class="services-container">
+        <h2 class="services-heading">Our Special Services</h2>
+        
+        <div class="services-grid">
+            <div class="service-box">
+                <img src="dupata.jfif" alt="Nikah Dupatta" onclick="openSlider('dupattas')" style="cursor: pointer;">
+                <h3>Customized Nikah Dupattas</h3>
+                <p>Hand-embroidered and personalized dupattas designed specially for your big day.</p>
+                <a href="order.html?service=Customized-Nikah-Dupattas" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-box">
+                <img src="caligraphy.jfif" alt="Caligraphy" onclick="openSlider('caligraphy')" style="cursor: pointer;">
+                <h3>Calligraphy Art</h3>
+                <p>Traditional and modern Arabic calligraphy artwork made to perfection.</p>
+                <a href="order.html?service=Calligraphy-Art" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-box">
+                <img src="art.jfif" alt="Sketches & Art" onclick="openSlider('sketches')" style="cursor: pointer;">
+                <h3>Sketches & Portraits</h3>
+                <p>Beautiful hand-drawn charcoal and pencil sketches to capture your memories.</p>
+                <a href="order.html?service=Sketches-and-Portraits" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-box">
+                <img src="nikahnama.jfif" alt="Nikah Frames" onclick="openSlider('frames')" style="cursor: pointer;">
+                <h3>Nikah Essentials</h3>
+                <p>Add a touch of elegance to your celebrations with our personalized Nikah frames and stunning wedding boxes.</p>
+                <a href="order.html?service=Nikah-Essentials" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-box">
+                <img src="handi3.jfif" alt="handiCrafts" onclick="openSlider('handicrafts')" style="cursor: pointer;">
+                <h3>HandiCrafts</h3>
+                <p>Add warmth to your space with our unique, handcrafted creations made with love.</p>
+                <a href="order.html?service=HandiCrafts" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-box">
+                <img src="gift.jfif" alt="Gift" onclick="openSlider('gifts')" style="cursor: pointer;">
+                <h3>Customized Gifts</h3>
+                <p>Make every moment special with our personalized, handmade gifts designed just for your loved ones.</p>
+                <a href="order.html?service=Customized-Gifts" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-box">
+                <img src="download (4).jfif" alt="Cards" onclick="openSlider('scrapbooks')" style="cursor: pointer;">
+                <h3>Scrapbooks & Customized Cards</h3>
+                <p>Handmade memory scrapbooks and personalized cards crafted with love to cherish your most special bonds.</p>
+                <a href="order.html?service=Scrapbooks-and-Cards" class="order-btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+   <div id="imageSliderModal" class="slider-modal">
+        <span class="close-slider" onclick="closeSlider()">&times;</span>
+        <div class="slider-content">
+            <span class="prev-btn" onclick="changeSlide(-1)">&#10094;</span>
+            <img id="sliderImage" src="" alt="Designs">
+            <span class="next-btn" onclick="changeSlide(1)">&#10095;</span>
+        </div>
+    </div>
+
+    <section id="contact" class="contact-main-section">
+    <h3 class="section-title">Contact Us !</h3>
+    
+    <div class="contact-container">
+        
+        <!-- Left Side: Contact Form Card -->
+        <div class="contact-card">
+            <h4>Get In Touch</h4>
+            <form action="https://formspree.io/f/xnpqbrwz" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Right Side: Let's Connect Card -->
+        <div class="contact-card contact-info-card">
+            <h4>Let's Connect</h4>
+            <p class="info-desc">Feel free to reach out to us through any of the platforms below or drop a message directly.</p>
+            
+            <div class="info-item">
+                <span class="icon">📍</span>
+                <p> Location: Karachi, Pakistan</p>
+            </div>
+
+            <div class="info-item">
+                <span class="icon">✉️</span>
+                <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dacreations021@gmail.com" target="_blank">dacreations021@gmail.com</a></p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/da_creationsssss/?hl=en" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@da_creationsssss?_r=1&_d=el2m9kjh079897&sec_uid=MS4wLjABAAAAwkaEb66HscODAY6covjN7IhroGn_4Zm8fj4JVwFNzYF21cWLxI7PPFx-1lKgHsS7&share_author_id=7675410911683462152&sharer_language=en&source=h5_m&u_code=f55ch77d390463&timestamp=1788694881&user_id=7675410911683462152&sec_user_id=MS4wLjABAAAAwkaEb66HscODAY6covjN7IhroGn_4Zm8fj4JVwFNzYF21cWLxI7PPFx-1lKgHsS7&item_author_type=1&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7645320441590695688&share_link_id=b0718cec-4eed-45b5-976d-bfe5c0195f07&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb7360&social_share_type=5&enable_checksum=1" target="_blank">TikTok</a>
+                <a href="https://www.facebook.com/profile.php?id=61593535527389" target="_blank">Facebook</a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <div class="footer">
+        <p class="footer-message">
+            D & A Creations<br>
+Your idea, our creativity. <br>Crafting handmade masterpieces with love and precision
+            <span class="footer-heart">&#9829;</span>
+        </p>
+        <p class="footer-sub-message"> 2026 D & A Creations. All Rights Reserved.<br></b>THANK YOU FOR SUPPORTING OUR SMALL BUSINESS♥</p>
+    </div> 
+
+    <script>
+        // URL se service ka naam pakar kar form mein set karne ke liye
+        const urlParams = new URLSearchParams(window.location.search);
+        let service = urlParams.get('service');
+        
+        if (service) {
+            // Hyphens ko spaces mein badalna
+            const formattedService = service.replace(/-/g, ' ');
+            document.getElementById('selectedServiceText').innerText = 'Selected Service: ' + formattedService;
+            document.getElementById('serviceInput').value = formattedService;
+        } else {
+            document.getElementById('selectedServiceText').innerText = 'Selected Service: Custom Order';
+            document.getElementById('serviceInput').value = 'Custom Order';
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
